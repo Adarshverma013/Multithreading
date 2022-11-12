@@ -1,0 +1,6 @@
+1. Each thread has its own thread stack
+2. All the threads share the same heap space
+3. Which means all the threads have their own copy of local variables and reference to objects
+    but since they share same heap space they will share the same objects
+4. Threads can only share the data via heap, they cannot share data via thread stack.
+5.
