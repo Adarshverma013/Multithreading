@@ -1,0 +1,33 @@
+Synchronized methods or blocks can be executed by one thread at a time.
+
+If two threads are operating on same object of SynchronizedExchanger class then
+they are using same monitor object so if one thread is accessing any of 4 method
+then other thread cannot access any method.
+
+For static methods the monitor object will be at class level and not instance level
+Instead of using instance as monitor object we will use the class object to synchronise static variables.
+
+Case where there is static and non static both type of variable then they will be synchronized
+on two monitor object
+
+Also possible to use different monitor objects for synchronised blocks within same class.
+
+If two different instances use same monitor object by sharing the same monitor object
+then they will block the synchronised methods for each other.
+
+Don't use string constants as monitor objects.
+Use Object or own class objects.
+
+When a thread exits a synchronised block all the variables visible to the thread are written
+to main memory
+
+Happens before Gurantee
+-- Java compiler is allowed to reorder the lines of code to execute the code faster
+-- Synchronized blocks comes with a happens before guarantee which puts some restrictions
+    on what instruction reorderings are allowed
+
+Limitations of Java Synchronized blocks-
+1. Only one thread can enter a synchronized block at a time.
+2. There is not gurantee about the sequence in which waiting threads get access to synchronized block
+
+Threads block the synchronized block in the same JVM only
