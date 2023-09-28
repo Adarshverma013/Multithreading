@@ -37,6 +37,7 @@ public class ThreadExample1 {
         };
         Thread t3 = new Thread(runnable,"My Thread");
         t3.start();
+        // replacing anonymous class with lambda expression as Runnable Interface is also a Functional Interface
         Thread t4 = new Thread(()->{
             System.out.println("Lambda expression implementation");
         });
@@ -45,7 +46,6 @@ public class ThreadExample1 {
          * JVM will stay alive until a thread is running
          * if the thread is Daemon then JVM will terminate the Daemon thread before terminating the main thread
          * thread.join() can be used for one thread to wait for the other thread to terminate
-         *
          */
     }
 }
