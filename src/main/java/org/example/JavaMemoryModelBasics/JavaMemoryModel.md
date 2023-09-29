@@ -13,8 +13,10 @@
 * Similary when a data is changed it goes from the Register to the
 Cache then to heap.
 
+
+![Java memory model](../../../../resources/images/Java%20Memory%20Model.png)
+
 This model poses some problems when designing multithreaded applications.
 One problem is **Race Condition**.
 
-Race conditions as a result how Java threads access memory.
-
+Race conditions are a result how Java threads access memory.
