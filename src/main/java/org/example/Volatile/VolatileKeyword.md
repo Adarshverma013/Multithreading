@@ -1,7 +1,7 @@
 If a variable is marked volatile then it will be written/read directly from the main memory
 
----- Java Volatile visibility Gurantee ----
-whenever we WRITE to a volatile variable then
+### Java Volatile visibility Gurantee
+Whenever we WRITE to a volatile variable then
 that variable and all other variables visible to that thread
 are directly written to main memory.
 
